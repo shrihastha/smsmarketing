@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="SMSMarketingAppender" class="ch.qos.logback.core.FileAppender">
+		<file>/www/logs/smsmarketing.log</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%d{ISO8601}::%-5p::[%c]::%m%n</pattern>
+		</encoder>
+	</appender>
+	
+	<root level="info">
+		<appender-ref ref="SMSMarketingAppender" />
+	</root>
+	
+</configuration>
